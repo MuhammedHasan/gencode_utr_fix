@@ -8,7 +8,7 @@ This package fixes UTR features in the third columns of Gencode GTF by convertin
 
 
 ```shell
-pip -e git+https://github.com/MuhammedHasan/gencode_utr_fix.git#egg=gencode_utr_fix
+pip install -e git+https://github.com/MuhammedHasan/gencode_utr_fix.git#egg=gencode_utr_fix
 ```
 
 
