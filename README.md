@@ -1,6 +1,6 @@
 # Gencode UTR fix
 
-Gencode GTF does not differential UTR as 5' and 3' UTR but annotates all of them as `UTR` unlike Ensembl GTF which annotates UTR as `five_prime_utr` and `three_prime_utr`. Thus, gencode annotation creates difficulty while studying UTR type-specific processes such as alternative polyadenylation.
+Gencode GTF does not differentiate UTR as 5' and 3' UTR but annotates all of them as `UTR` unlike Ensembl GTF which annotates UTR as `five_prime_utr` and `three_prime_utr`. Thus, gencode annotation creates difficulty while studying UTR type-specific processes such as alternative polyadenylation.
 
 This package fixes UTR features in the third columns of Gencode GTF by converting `UTR` annotation into  `five_prime_utr` and `three_prime_utr` similar to Ensembl. Package compares the location of UTR with CDS in GTF and annotates UTRs as `five_prime_utr` if UTR is located before CDS and `three_prime_utr` if UTR is located after CDS.
 
