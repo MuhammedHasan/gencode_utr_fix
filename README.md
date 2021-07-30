@@ -24,3 +24,8 @@ gencode_utr_fix --input_gtf gencode.v29.annotation.gtf --output_gtf gencode.v29.
 ```
 pytest tests/
 ```
+
+## Cite
+This package is based on [pyranges](https://github.com/biocore-ntnu/pyranges) so cite the pyranges paper if you are using this package for research: 
+
+pyranges: http://dx.doi.org/10.1093/bioinformatics/btz615
