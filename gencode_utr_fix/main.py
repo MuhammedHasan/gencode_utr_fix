@@ -33,9 +33,21 @@ class UtrUpdater:
             cds_end = self.ends[row['transcript_id']]
 
             if row['Start'] < cds_start:
-                row['Feature'] = 'five_prime_utr'
+                if row['Strand'] == '+':
+                    row['Feature'] = 'five_prime_utr'
+                elif row['Strand'] == '-':
+                    row['Feature'] = 'three_prime_utr'
+                else:
+                    raise ValueError('UTR type cannot determined')
+
             elif cds_end < row['End']:
-                row['Feature'] = 'three_prime_utr'
+                if row['Strand'] == '+':
+                    row['Feature'] = 'three_prime_utr'
+                elif row['Strand'] == '-':
+                    row['Feature'] = 'five_prime_utr'
+                else:
+                    raise ValueError('UTR type cannot determined')
+
             else:
                 raise ValueError('UTR type cannot determined')
         return row
