@@ -22,10 +22,6 @@ setup(
     description="Fix UTR of Gencode",
     install_requires=requirements,
     license="MIT license",
-    entry_points='''
-        [console_scripts]
-        gencode_utr_fix=gencode_utr_fix.main:cli
-    ''',
     keywords=['Gencode', 'UTR'],
     name='gencode_utr_fix',
     packages=find_packages(include=['gencode_utr_fix']),

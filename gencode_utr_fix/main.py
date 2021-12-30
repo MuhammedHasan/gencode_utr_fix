@@ -73,7 +73,3 @@ def cli(input_gtf, output_gtf):
     gr = pr.read_gtf(input_gtf)
     gr_utr = gencode_utr_fix(gr)
     gr_utr.to_gtf(output_gtf)
-
-
-if __name__ == '__main__':
-    cli()
