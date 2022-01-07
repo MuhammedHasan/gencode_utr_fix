@@ -66,8 +66,8 @@ def gencode_utr_fix(gr):
 
 
 @click.command()
-@click.option('--input_gtf', help='Number of greetings.')
-@click.option('--output_gtf', help='The person to greet.')
+@click.option('--input_gtf', help='Input gencode gtf file.')
+@click.option('--output_gtf', help='Output gtf file.')
 def cli(input_gtf, output_gtf):
     print('Reading GTF...')
     gr = pr.read_gtf(input_gtf)

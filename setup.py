@@ -24,6 +24,10 @@ setup(
     license="MIT license",
     keywords=['Gencode', 'UTR'],
     name='gencode_utr_fix',
+    entry_points='''
+        [console_scripts]
+        gencode_utr_fix=gencode_utr_fix.main:cli
+    ''',
     packages=find_packages(include=['gencode_utr_fix']),
     setup_requires=setup_requirements,
     test_suite='tests',
