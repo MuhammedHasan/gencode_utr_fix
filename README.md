@@ -29,4 +29,5 @@ pytest tests/
 This package is based on [pyranges](https://github.com/biocore-ntnu/pyranges) and designed for [lapa](https://github.com/mortazavilab/lapa) so cite the PyRanges and LAPA  if you are using this package for research: 
 
 PyRanges: http://dx.doi.org/10.1093/bioinformatics/btz615
+
 LAPA: https://www.biorxiv.org/content/10.1101/2022.11.08.515683v1
